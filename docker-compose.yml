@@ -5,7 +5,7 @@ services:
     container_name: "modmappingsite"
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.modmappingssite.entrypoints=web"
-#      - "traefik.http.routers.modmappingssite.middlewares=httpsonly@file"
+      - "traefik.http.routers.modmappingssite.entrypoints=web,websecure"
+      - "traefik.http.routers.modmappingssite.middlewares=httpsonly@file"
       - "traefik.http.routers.modmappingssite.rule=Host(`modmappings.org`)"
-#      - "traefik.http.routers.modmappingssite.tls.certresolver=modmappings"
+      - "traefik.http.routers.modmappingssite.tls.certresolver=modmappings"
