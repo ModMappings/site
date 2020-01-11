@@ -9,7 +9,8 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    docker.build("mcpmappingsite:${env.BUILD_ID}")
+                    site=docker.build("modmappingsite:${env.BUILD_ID}")
+                    site.push("modmappingsite:latest")
                 }
             }
         }
