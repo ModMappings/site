@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     site=docker.build("modmappingsite:${env.BUILD_ID}")
-                    site.push("latest")
+                    site.tag("latest")
                 }
             }
         }
