@@ -28,7 +28,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   # Metadata mostly used in document's head
   # description = ""
-  # images = [""]
+  images = ["/hithere.png", "/splash.png"]
   themeColor = "#494f5c"
 
   homeSubtitle = "The ongoing saga of mod mapping data. Here you'll find information on what's happening and the future of mod mapping data."
