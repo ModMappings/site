@@ -5,6 +5,10 @@ It intends to address some of the problems associated with the MCP project, such
 
 Check back soon. 
 
+You can find ongoing chat in the minecraft forge #mcpconfig channel on discord, if you're interested in contributing.
+
+Some statements on the relationship to [mcp](/mcp/) and [the official names](/officialnames/)
+
 ![beautiful new logo](/splash.png)
 
 ![hello there](/hithere.png)
