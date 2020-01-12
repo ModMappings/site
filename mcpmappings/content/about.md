@@ -3,7 +3,7 @@ title: "About"
 date: 2020-01-11T16:05:49-05:00
 draft: false
 author: cpw
-featuredImage: /hithere.png
+images: /hithere.png
 ---
 
 
