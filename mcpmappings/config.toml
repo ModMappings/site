@@ -67,6 +67,11 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     weight = 10
 
   [[menu.main]]
-    name = "About Mod Mappings"
+    name = "Goals"
+    url = "goals/"
+    weight = 15
+
+  [[menu.main]]
+    name = "About"
     url = "about/"
     weight = 20
