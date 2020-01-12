@@ -13,6 +13,15 @@ pipeline {
                     site.tag("latest")
                 }
             }
+            post {
+                success {
+                    script {
+                        image('tmaier/docker-compose:1.12').inside(
+                            'docker-compose up'
+                        )
+                    }
+                }
+            }
         }
     }
 
