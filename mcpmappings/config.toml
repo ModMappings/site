@@ -27,11 +27,16 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  # description = ""
-  images = ["/hithere.png", "/splash.png"]
+  description = "Mod mappings - an evolution of the mapping data crowd sourcing project"
+  images = ["/hithere.png"]
   themeColor = "#494f5c"
 
-  homeSubtitle = "The ongoing saga of mod mapping data. Here you'll find information on what's happening and the future of mod mapping data."
+  homeSubtitle = """
+  The ongoing saga of mod mapping data.
+  Here you'll find information on what's happening and the future of mod mapping data.
+  Information about new crowdsourcing projects, as well as tools and accessibility information.
+  There's lots of information here. Just click the links below. Shut up prospector!
+  """
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "/splash.png"  # Homepage background-image URL
 
