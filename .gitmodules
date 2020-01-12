@@ -1,9 +1,6 @@
 [submodule "mcpmappings/themes/hermit"]
 	path = mcpmappings/themes/hermit
 	url = https://github.com/Track3/hermit.git
-[submodule "mcpmappings/themes/m10c"]
-	path = mcpmappings/themes/m10c
-	url = https://github.com/vaga/hugo-theme-m10c
-[submodule "mcpmappings/themes/hyde-hyde"]
-	path = mcpmappings/themes/hyde-hyde
-	url = https://github.com/htr3n/hyde-hyde.git
+[submodule "mcpmappings/themes/beautifulhugo"]
+	path = mcpmappings/themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git
