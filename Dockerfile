@@ -1,5 +1,5 @@
 FROM jojomi/hugo:latest AS makesite
-COPY mcpmappings /src
+COPY modmappings /src
 RUN /usr/local/sbin/hugo --source /src -D -d /tmp/output/ -v
 
 FROM nginx:latest
