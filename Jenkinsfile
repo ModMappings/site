@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker
+        docker {}
     }
     stages {
         stage('fetch') {
