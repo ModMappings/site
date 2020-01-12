@@ -1,14 +1,14 @@
-version: 2
+version: "2"
 services:
   modmappingsite:
     image: "modmappingsite:latest"
     network_mode: "bridge"
     labels:
-      - traefik.enable=true
-      - traefik.http.routers.modmappingsite.entrypoints=web,websecure
-      - traefik.http.routers.modmappingsite.middlewares=httpsonly@file
-      - traefik.http.routers.modmappingsite.rule=Host(`modmappings.org`)
-      - traefik.http.routers.modmappingsite.tls=true
-      - traefik.http.routers.modmappingsite.tls.certresolver=forge
-      - traefik.http.routers.modmappingsite.tls.domains[0].main=modmappings.org
-      - traefik.http.routers.modmappingsite.tls.domains[0].sans=*.modmappings.org
+      - "traefik.enable=true"
+      - "traefik.http.routers.modmappingsite.entrypoints=web,websecure"
+      - "traefik.http.routers.modmappingsite.middlewares=httpsonly@file"
+      - "traefik.http.routers.modmappingsite.rule=Host(`modmappings.org`)"
+      - "traefik.http.routers.modmappingsite.tls=true"
+      - "traefik.http.routers.modmappingsite.tls.certresolver=forge"
+      - "traefik.http.routers.modmappingsite.tls.domains[0].main=modmappings.org"
+      - "traefik.http.routers.modmappingsite.tls.domains[0].sans=*.modmappings.org"
