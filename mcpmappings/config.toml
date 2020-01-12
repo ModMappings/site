@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Mod Mappings"
-theme = "m10c"
+theme = "hyde-hyde"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 10  # Maximum number of items in the RSS feed.
