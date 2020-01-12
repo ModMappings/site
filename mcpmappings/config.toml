@@ -31,7 +31,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "The ongoing saga of mod mapping data<br/>Here you'll find information on what's happening and the future of mod mapping data"
+  homeSubtitle = "The ongoing saga of mod mapping data\nHere you'll find information on what's happening and the future of mod mapping data"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   bgImg = "/splash.png"  # Homepage background-image URL
 
