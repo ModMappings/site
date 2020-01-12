@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Mod Mappings"
-theme = "hermit"
+theme = "m10c"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 10  # Maximum number of items in the RSS feed.
@@ -10,11 +10,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
 [author]
   name = "Mod Mappings"
-
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
 
 [taxonomies]
   tag = "tags"
