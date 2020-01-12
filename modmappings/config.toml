@@ -1,38 +1,29 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Mod Mappings"
-theme = "hugo-notepadium"
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-rssLimit = 10  # Maximum number of items in the RSS feed.
+theme = "cupper-hugo-theme"
 [params]
-style = "dark"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
-dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
-logo = "/gigasplash.png"  # if you have a logo png
-slogan = "hello"
-license = ""  # CC License
+    description = "Hello"
+    homeMetaContent = "Hi"
 
-[params.comments]
-enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
-[params.math]
-enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+[[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight = 1
 
-[params.syntax]
-use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
-theme = "dracula"
-darkTheme = "xcode-dark"  # apply this theme in dark mode
+[[menu.nav]]
+    name = "Posts"
+    url = "/posts"
+    weight = 2
 
-[params.nav]
-showCategories = true       # /categories/
-showTags = true             # /tags/
+[[menu.nav]]
+    name = "About"
+    url = "/about"
+    weight = 3
 
-# custom navigation items
+[[menu.nav]]
+    name = "Contributors"
+    url = "/contributors"
+    weight = 4
 
-[[params.nav.custom]]
-title = "About"
-url = "/about"
-
-[[params.nav.custom]]
-title = "Contributors"
-url = "/contributors"
