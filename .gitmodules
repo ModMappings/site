@@ -1,6 +1,6 @@
 [submodule "mcpmappings/themes/hermit"]
 	path = modmappings/themes/hermit
 	url = https://github.com/Track3/hermit.git
-[submodule "mcpmappings/themes/beautifulhugo"]
-	path = modmappings/themes/beautifulhugo
-	url = https://github.com/halogenica/beautifulhugo.git
+[submodule "modmappings/themes/hugo-notepadium"]
+	path = modmappings/themes/hugo-notepadium
+	url = https://github.com/cntrump/hugo-notepadium.git

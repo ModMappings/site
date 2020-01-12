@@ -5,37 +5,34 @@ theme = "beautifulhugo"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 10  # Maximum number of items in the RSS feed.
+[params]
+style = "dark"  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = "Monday, January 2, 2006"  # if unset, default is "2006-01-02"
+logo = "/gigasplash.png"  # if you have a logo png
+slogan = "hello"
+license = ""  # CC License
 
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/ModMappings"
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
 
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/modmappings"
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
 
-  [[params.social]]
-    name = "discord"
-    url = "https://discord.gg/KJR9nte"
+[params.syntax]
+use = "none"  # builtin: "prismjs", "hljs". "none" means Chroma
+theme = "dracula"
+darkTheme = "xcode-dark"  # apply this theme in dark mode
 
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
 
-[menu]
-  [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
+# custom navigation items
 
-  [[menu.main]]
-    name = "Goals"
-    url = "goals/"
-    weight = 15
+[[params.nav.custom]]
+title = "About"
+url = "/about"
 
-  [[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 20
-
-  [[menu.main]]
-    name = "Contributors"
-    url = "contributors/"
-    weight = 25
+[[params.nav.custom]]
+title = "Contributors"
+url = "/contributors"
