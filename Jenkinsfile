@@ -16,7 +16,7 @@ pipeline {
             post {
                 success {
                     script {
-                        image('tmaier/docker-compose:1.12').inside(
+                        docker.image('tmaier/docker-compose:1.12').inside(
                             'docker-compose up'
                         )
                     }
