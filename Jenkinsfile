@@ -16,9 +16,11 @@ pipeline {
             post {
                 success {
                     script {
-                        docker.image('tmaier/docker-compose:1.12').inside(
-                            sh(script: '/usr/bin/docker-compose up')
-                        )
+                        def img = docker.image('tmaier/docker-compose:1.12')
+                        img.inside('-v /var/run/docker.sock:/var/run/docker.sock')
+                        {
+                            sh '/usr/bin/docker-compose up'
+                        }
                     }
                 }
             }
