@@ -58,9 +58,12 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     name = "twitter"
     url = "https://twitter.com/modmappings"
 
+  [[params.social]]
+    name = "discord"
+    url = "https://discord.gg/KJR9nte"
+
 
 [menu]
-
   [[menu.main]]
     name = "Posts"
     url = "posts/"
