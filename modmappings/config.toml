@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Mod Mappings"
-theme = "beautifulhugo"
+theme = "hugo-notepadium"
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 rssLimit = 10  # Maximum number of items in the RSS feed.
