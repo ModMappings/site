@@ -29,7 +29,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Metadata mostly used in document's head
   # description = ""
   # images = [""]
-  themeColor = "#1e3362"
+  themeColor = "#0755fe"
 
   homeSubtitle = "The ongoing saga of mod mapping data. Here you'll find information on what's happening and the future of mod mapping data."
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
