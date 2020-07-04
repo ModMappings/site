@@ -9,18 +9,21 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    site=docker.build("modmappingsite:${env.BUILD_ID}")
-                    site.tag("latest")
+                    img = docker.image('tmaier/docker-compose:latest')
+                    img.inside('-v /var/run/docker.sock:/var/run/docker.sock') {
+                        sh '/usr/bin/docker-compose build'
+                    }
                 }
             }
             post {
                 success {
+                    environment {
+                        PORTAINER=credentials('portainer')
+                        PORTAINER_URL=credentials('portainer-url')
+                    }
                     script {
-                        def img = docker.image('tmaier/docker-compose:1.12')
-                        img.inside('-v /var/run/docker.sock:/var/run/docker.sock')
-                        {
-                            sh '/usr/bin/docker-compose up -d --force-recreate --remove-orphans'
-                        }
+                        def img = docker.image('greenled/portainer-stack-utils')
+                        img.run('-v /var/run/docker.sock:/var/run/docker.sock -v .:/tmp/deploy -e PORTAINER_USER=${PORTAINER_USR} -e PORTAINER_PASSWORD=${PORTAINER_PSW} PORTAINER_URL=${PORTAINER_URL} PORTAINER_STACK_NAME=mmms DOCKER_COMPOSE_FILE=docker-compose.yaml PORTAINER_PRUNE=true ACTION=deploy')
                     }
                 }
             }

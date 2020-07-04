@@ -1,8 +1,12 @@
 version: '2'
 services:
   modmappingsite:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: 'modmappingsite:latest'
     container_name: 'mmms-site'
+    restart: 'always'
     network_mode: 'bridge'
     labels:
       - "traefik.enable=true"
