@@ -6,11 +6,6 @@ pipeline {
         }
     }
     stages {
-        stage('fetch') {
-            steps {
-                checkout scm
-            }
-        }
         stage('build') {
             steps {
                 script {

@@ -2,6 +2,7 @@ version: '2'
 services:
   modmappingsite:
     image: 'modmappingsite:latest'
+    container_name: 'mmms-site'
     network_mode: 'bridge'
     labels:
       - "traefik.enable=true"
