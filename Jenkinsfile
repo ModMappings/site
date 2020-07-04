@@ -7,7 +7,7 @@ pipeline {
     }
     environment {
         PORTAINER=credentials('portainer')
-        PORTAINER_URL=credentials('portainer-url')
+        PORTAINER_URL=credentials('portainerurl')
     }
     stages {
         stage('build') {
