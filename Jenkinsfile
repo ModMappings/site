@@ -23,7 +23,7 @@ pipeline {
                 success {
                     script {
                         def img = docker.image('greenled/portainer-stack-utils')
-                        img.run('-v /var/run/docker.sock:/var/run/docker.sock -v .:/tmp/deploy -e PORTAINER_USER=${PORTAINER_USR} -e PORTAINER_PASSWORD=${PORTAINER_PSW} PORTAINER_URL=${PORTAINER_URL} PORTAINER_STACK_NAME=mmms DOCKER_COMPOSE_FILE=docker-compose.yaml PORTAINER_PRUNE=true ACTION=deploy')
+                        img.run('-v /var/run/docker.sock:/var/run/docker.sock -v .:/tmp/deploy -e PORTAINER_USER=${PORTAINER_USR} -e PORTAINER_PASSWORD=${PORTAINER_PSW} -e PORTAINER_URL=${PORTAINER_URL} -e PORTAINER_STACK_NAME=mmms -e DOCKER_COMPOSE_FILE=docker-compose.yaml -e PORTAINER_PRUNE=true -e ACTION=deploy')
                     }
                 }
             }
