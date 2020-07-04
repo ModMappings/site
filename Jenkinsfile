@@ -15,7 +15,7 @@ pipeline {
                 script {
                     img = docker.image('tmaier/docker-compose:latest')
                     img.inside('-v /var/run/docker.sock:/var/run/docker.sock') {
-                        sh '/usr/bin/docker-compose build --force-recreate'
+                        sh '/usr/bin/docker-compose build --no-cache'
                     }
                 }
             }
