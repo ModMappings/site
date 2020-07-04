@@ -3,8 +3,9 @@ languageCode = "en-us"
 title = "Mod Mappings"
 theme = "cupper-hugo-theme"
 [params]
-    description = "Hello"
-    homeMetaContent = "Hi"
+    description = "Welcome to the mod mappings site"
+    homeMetaContent = "Mod Mappings"
+    darkThemeAsDefault = true
 
 
 [[menu.nav]]
