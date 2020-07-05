@@ -21,9 +21,11 @@ pipeline {
             }
             post {
                 success {
-                    img = docker.image('tmaier/docker-compose:latest')
-                    img.inside('-v /var/run/docker.sock:/var/run/docker.sock') {
-                        sh '/usr/bin/docker-compose up -d --force-recreate -p mmmssite'
+                    script {
+                        img = docker.image('tmaier/docker-compose:latest')
+                        img.inside('-v /var/run/docker.sock:/var/run/docker.sock') {
+                            sh '/usr/bin/docker-compose up -d --force-recreate -p mmmssite'
+                        }
                     }
                 }
             }
