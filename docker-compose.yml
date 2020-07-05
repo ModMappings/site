@@ -11,10 +11,10 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.modmappingsitenotls.entrypoints=web"
-      - "traefik.http.routers.modmappingsitenotls.rule=Host(`modmappings.org`)"
+      - "traefik.http.routers.modmappingsitenotls.rule=Host(`modmappings.org`) || Host(`www.modmappings.org`)"
       - "traefik.http.routers.modmappingsitenotls.middlewares=httpsonly@file"
       - "traefik.http.routers.modmappingsite.entrypoints=websecure"
-      - "traefik.http.routers.modmappingsite.rule=Host(`modmappings.org`)"
+      - "traefik.http.routers.modmappingsite.rule=Host(`modmappings.org`) || Host(`www.modmappings.org`)"
       - "traefik.http.routers.modmappingsite.tls=true"
       - "traefik.http.routers.modmappingsite.tls.certresolver=forge"
       - "traefik.http.routers.modmappingsite.tls.domains[0].main=modmappings.org"
